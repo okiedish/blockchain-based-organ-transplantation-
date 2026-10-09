@@ -1,0 +1,9 @@
+# MongoDB for local development. The API and client are started with npm (see README).
+services:
+  mongo:
+    image: mongo:8
+    restart: unless-stopped
+    ports: ["27017:27017"]
+    volumes: [mongodb_data:/data/db]
+volumes:
+  mongodb_data:

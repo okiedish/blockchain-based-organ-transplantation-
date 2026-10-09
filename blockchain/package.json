@@ -1,0 +1,20 @@
+{
+  "name": "jeevanbindu-blockchain",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile && node scripts/export-abi.js",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "export-abi": "node scripts/export-abi.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "hardhat": "^2.26.3",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0"
+  }
+}
